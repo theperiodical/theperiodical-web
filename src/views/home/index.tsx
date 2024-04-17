@@ -1,7 +1,11 @@
 import { Navbar } from "@/components/navbar"
 import HeroSection from "@/sections/hero"
-import MonthlyTopics from "@/sections/monthly-topics"
+import MonthlyTopicsSection from "@/sections/monthly-topics"
 import TimelyGistsSection from "@/sections/timely-gists"
+import AboutUsSection from "@/sections/about-us"
+import AuthorsListSection from "@/sections/authors-list"
+import JoinTeamSection from "@/sections/join-team"
+import Footer from "@/sections/footer"
 
 export default function HomeView(){
     return(
@@ -9,7 +13,11 @@ export default function HomeView(){
     <Navbar />
     <HeroSection />
     <TimelyGistsSection />
-    <MonthlyTopics />
+    <MonthlyTopicsSection />
+    <AboutUsSection />
+    <AuthorsListSection />
+    <JoinTeamSection />
+    <Footer />
         </div>
             
     )

@@ -1,4 +1,4 @@
-export default function MonthlyTopics(){
+export default function MonthlyTopicsSection(){
     const items=[{
         image:"/Images/periodical.jpg",
         title:'Figma, Sketch, XD or Lunacy? Who rules?',
@@ -22,7 +22,7 @@ export default function MonthlyTopics(){
        }
        ]
     return(
-<div className="flex flex-col items-center">
+<div className="flex flex-col items-center pb-14">
     <div className="text-2xl font-bold">Topic of the Month</div>
     <div className="flex flex-row gap-10 px-10">
     <div className="flex ">
