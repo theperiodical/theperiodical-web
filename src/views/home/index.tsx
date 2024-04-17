@@ -1,11 +1,11 @@
 import { Navbar } from "@/components/navbar"
-import HeroSection from "@/sections/hero"
-import MonthlyTopicsSection from "@/sections/monthly-topics"
-import TimelyGistsSection from "@/sections/timely-gists"
-import AboutUsSection from "@/sections/about-us"
-import AuthorsListSection from "@/sections/authors-list"
-import JoinTeamSection from "@/sections/join-team"
-import Footer from "@/sections/footer"
+import HeroSection from "@/sections/home/hero"
+import MonthlyTopicsSection from "@/sections/home/monthly-topics"
+import TimelyGistsSection from "@/sections/home/timely-gists"
+import AboutUsSection from "@/sections/home/about-us"
+import AuthorsListSection from "@/sections/home/authors-list"
+import JoinTeamSection from "@/sections/home/join-team"
+import Footer from "@/sections/home/footer"
 
 export default function HomeView(){
     return(
