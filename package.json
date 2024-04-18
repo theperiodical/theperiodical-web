@@ -6,14 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate": "prisma generate --no-engine",
+    "migrate:dev": "prisma migrate dev",
+    "postinstall": "prisma generate --no-engine"
   },
   "dependencies": {
     "@iconify/react": "^4.1.1",
+    "@prisma/client": "^5.12.1",
+    "@prisma/extension-accelerate": "^1.0.0",
+    "axios": "^1.6.8",
+    "date-fns": "^3.6.0",
+    "lucide-react": "^0.371.0",
     "next": "14.1.4",
+    "next-nprogress-bar": "^2.3.11",
+    "prisma": "^5.12.1",
     "react": "^18",
     "react-dom": "^18",
-    "react-pageflip": "^2.0.3"
+    "react-hot-toast": "^2.4.1",
+    "react-pageflip": "^2.0.3",
+    "swr": "^2.2.5"
   },
   "devDependencies": {
     "@iconify/tailwind": "^0.1.4",
