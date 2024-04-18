@@ -41,7 +41,7 @@ export default function TimelyGistsSection({ gists }: { gists: any }) {
   const latestGist = gists ? gists[0] : null;
 
   return (
-    <div className="flex flex-row justify-between gap-12 py-14 px-14">
+    <div id="gists" className="flex flex-row justify-between gap-12 py-14 px-14">
       {latestGist && (
         <div className="flex flex-col w-3/5 h-1/6 py-14">
           <div className="text-2xl font-bold">Weekly Gist</div>
@@ -59,7 +59,7 @@ export default function TimelyGistsSection({ gists }: { gists: any }) {
               <p className="text-grey text-sm">{latestGist.description}</p>
             </div>
             <Link href={`/gist/${latestGist.slug}`}>
-              <button className="w-28 h-10 bg-primary-dark text-white mt-6 text-sm">
+              <button className="w-28 h-10 bg-primary-dark text-white mt-6 text-sm hover:bg-primary-hover">
                 Read More &gt;
               </button>
             </Link>

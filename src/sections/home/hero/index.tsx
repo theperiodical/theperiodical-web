@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function HeroSection({ link }: { link: string }) {
   return (
-    <div className="flex flex-row items-center justify-between gap-6 px-14">
+    <div id="home" className="flex flex-row items-center justify-between gap-6 px-14">
       <div className="flex flex-col gap-2 w-1/2 h-1/6 py-28">
         <div className="text-sm">
           POSTED ON <span className="font-bold">FEB 16, 2024</span>
@@ -19,7 +19,7 @@ export default function HeroSection({ link }: { link: string }) {
           taxes, focusing on their role in redistributing unexpected gains.
         </div>
         <Link href={`${paths.gist}/${link}`}>
-          <button className="w-28 h-10 bg-primary-dark text-white mt-6 text-sm">
+          <button className="w-28 h-10 bg-primary-dark text-white mt-6 text-sm hover:bg-primary-hover">
             Read More &gt;
           </button>
         </Link>
