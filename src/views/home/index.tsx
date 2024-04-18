@@ -5,7 +5,7 @@ import TimelyGistsSection from "@/sections/home/timely-gists"
 import AboutUsSection from "@/sections/home/about-us"
 import AuthorsListSection from "@/sections/home/authors-list"
 import JoinTeamSection from "@/sections/home/join-team"
-import Footer from "@/sections/home/footer"
+import {Footer} from "@/components/footer"
 
 export default function HomeView(){
     return(

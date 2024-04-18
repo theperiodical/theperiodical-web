@@ -7,7 +7,7 @@ export const Navbar=()=>{
     <div className="">logo</div>
     <div className="flex flex-row gap-4 items-center">
         <Link href={'#'} className="text-center">Home</Link>
-        <Link href={'#'} className="text-center">Blogs</Link>
+        <Link href={'#'} className="text-center">Gists</Link>
         <Link href={'#'} className="text-center">About Us</Link>
         <Link href={'#'} className="text-center">Contact Us</Link>
     <button className="w-28 h-10 bg-primary-dark text-white">Subscribe</button></div>

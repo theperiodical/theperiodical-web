@@ -1,22 +1,22 @@
 export default function MonthlyTopicsSection(){
     const items=[{
-        image:"/Images/periodical.jpg",
+        image:"/Images/topic_1.jpg",
         title:'Figma, Sketch, XD or Lunacy? Who rules?',
-        writtenBy: "Thomas Paul",
+        writtenBy: "Sudha Murthy",
         date: "Feb 9, 2021",
         href:""   
        },
        {
-        image:"/Images/periodical.jpg",
+        image:"/Images/topic_2.jpg",
         title:'Figma, Sketch, XD or Lunacy? Who rules?',
-        writtenBy: "Thomas Paul",
+        writtenBy: "Jenny Wilson",
         date: "Feb 9, 2021",
         href:""   
        },
        {
-        image:"/Images/periodical.jpg",
+        image:"/Images/topic_3.jpg",
         title:'Figma, Sketch, XD or Lunacy? Who rules?',
-        writtenBy: "Thomas Paul",
+        writtenBy: "Aditya Shekhawat",
         date: "Feb 9, 2021",
         href:""   
        }

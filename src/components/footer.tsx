@@ -3,7 +3,7 @@ import {Icon} from "@iconify/react"
 import Link from "next/link";
 
 
-export default function Footer(){
+export  function Footer(){
     return(
         <div className="flex flex-col bg-primary-light w-full mt-28">
         <div className="flex flex-row items-center pt-8 px-8 justify-between ">
@@ -12,7 +12,7 @@ export default function Footer(){
                     <div className="font-bold text-lg">Logo</div>
                     <div className="flex gap-4" >
                     <Link href={'#'} className="text-center text-sm">Home</Link>
-                    <Link href={'#'} className="text-center text-sm">Blogs</Link>
+                    <Link href={'#'} className="text-center text-sm">Gists</Link>
                     <Link href={'#'} className="text-center text-sm">About Us</Link>
                     <Link href={'#'} className="text-center text-sm">Contact Us</Link>
                     </div>

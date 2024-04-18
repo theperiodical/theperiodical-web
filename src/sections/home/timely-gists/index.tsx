@@ -36,10 +36,10 @@ export default function TimelyGistsSection(){
                 <div className="text-2xl font-bold">Weekly Gist</div>
                 <div className="text-grey text-sm">Feb 12, 2024 - Feb 19, 2024</div>
                 <div className=" flex flex-col gap-4 border border-[#ebe8e8] mt-6 rounded-md px-14 py-10">
-                    <img src="/Images/periodical.jpg" alt="hero-image" className=' w-full h-[200px] object-cover' />
+                    <img src="/Images/gist_1.png" alt="hero-image" className=' w-full h-[200px] object-cover' />
                     <div className="flex flex-col gap-1">
-                   <p className="text-lg font-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                    <p className="text-grey text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></div>
+                   <p className="text-lg font-bold">Revitalizing the India-Myanmar-Thailand Trilateral Highway: A Regional Connectivity Endeavor.</p>
+                    <p className="text-grey text-sm">India’s External affairs minister recently met his Myanmar counterpart and discussed expediting projects, especially the India-Myanmar-Thailand trilateral highway. The highway will span a distance of approximately 1,360 kilometres (845 miles), starting from Moreh in Manipur, India.</p></div>
                     <button className="w-28 h-10 bg-primary-dark text-white mt-6 text-sm">Read More &gt;</button>
                 </div>
             </div>

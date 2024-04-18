@@ -4,24 +4,14 @@ import {Icon} from "@iconify/react"
 export default function AuthorsListSection(){
     const items=[
         {
-            authimg:"/Images/periodical.jpg",
-            name:"Jenny Wilson",
-            role:'Content Writer @Company',  
+            authimg:"/Images/author_1.jpg",
+            name:"Subin S K",
+            role:'Content Writer @HireIntel',  
            },
            {
-            authimg:"/Images/periodical.jpg",
-            name:"Jenny Wilson",
-            role:'Content Writer @Company',  
-           },
-           {
-            authimg:"/Images/periodical.jpg",
-            name:"Jenny Wilson",
-            role:'Content Writer @Company',  
-           },
-           {
-            authimg:"/Images/periodical.jpg",
-            name:"Jenny Wilson",
-            role:'Content Writer @Company',  
+            authimg:"/Images/author_2.jpg",
+            name:"Navya Srivastav",
+            role:'Content Writer @SigLens',  
            }
     ]
     return(

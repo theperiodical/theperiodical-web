@@ -13,13 +13,13 @@ export default function AboutUsSection(){
                 <p className="text-sm mb-4">ABOUT US</p>
                 <h1 className="text-xl
                  font-bold">We are a community of content writers who share their learnings</h1>
-                <p className="text-sm text-grey mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p className="text-sm text-grey mb-5">Step into our vibrant community of writers, where knowledge flows freely and creativity thrives. Join us as we collaborate, learn, and grow together on our writing adventures!</p>
                 <a href="#" className="text-sm text-black hover:text-primary-dark underline">Read more &gt;</a>
             </div>
             <div className="flex flex-col w-1/2 py-10">
                 <p className="text-sm mb-4">OUR MISSION</p>
-                <h1 className="text-xl font-bold">Creating valuable content for creatives all around the world</h1>
-                <p className="text-sm text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h1 className="text-xl font-bold">Creating valuable content for enlightment around the world.</h1>
+                <p className="text-sm text-grey">Our mission is to craft insightful content that encapsulates global news, offering concise summaries and in-depth analysis for discerning readers. We aim to inform, enlighten, and engage our audience with the latest developments from around the world.</p>
                 </div>
         </div>
         </div>
