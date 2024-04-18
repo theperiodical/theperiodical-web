@@ -15,6 +15,7 @@ export async function GET() {
       gist: {
         select: {
           id: true,
+          slug: true,
           author: {
             select: {
               name: true,
