@@ -16,7 +16,8 @@ const config: Config = {
       colors:{
         primary:{
           light:"#FEEFED",
-          dark:"#F7684D"
+          dark:"#F7684D",
+          hover: "#d4553d"
         },
         background:{
           white: "#FFFFF"

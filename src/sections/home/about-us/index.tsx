@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function AboutUsSection(){
     return(
-        <div className="flex flex-col mt-14 mx-12">
+        <div id="about-us" className="flex flex-col mt-14 mx-12">
             <div className="flex flex-row h-4">
                 <div className="w-1/5 bg-white" />
                 <div className="w-3/5 bg-secondary" />
