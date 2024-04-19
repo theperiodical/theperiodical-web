@@ -3,10 +3,13 @@ import Link from "next/link";
 
 export default function HeroSection({ link }: { link: string }) {
   return (
-    <div id="home" className="flex flex-row items-center justify-between gap-6 px-14">
+    <div
+      id="home"
+      className="flex flex-row items-center justify-between gap-6 px-14"
+    >
       <div className="flex flex-col gap-2 w-1/2 h-1/6 py-28">
         <div className="text-sm">
-          POSTED ON <span className="font-bold">FEB 16, 2024</span>
+          POSTED ON <span className="font-bold">FEB 19, 2024</span>
         </div>
         <div className="text-3xl font-bold">
           Exploring the Impact and Implications of Windfall Taxes
