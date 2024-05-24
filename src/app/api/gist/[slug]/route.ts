@@ -4,13 +4,13 @@ export async function GET(
   req: Request,
   { params }: { params: { slug: string } }
 ) {
-  const response = await prisma.gist.findUnique({
+  const response = await prisma.gists.findUnique({
     where: {
       slug: params.slug,
     },
     include: {
       topics: true,
-      author: true,
+      users: true,
     },
   });
 

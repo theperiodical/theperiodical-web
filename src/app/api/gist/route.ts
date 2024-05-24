@@ -1,10 +1,10 @@
 import { prisma } from "@/lib";
 
 export async function GET() {
-  const response = await prisma.gist.findMany({
+  const response = await prisma.gists.findMany({
     include: {
       topics: true,
-      author: true,
+      users: true,
     },
     orderBy: {
       from: "desc",

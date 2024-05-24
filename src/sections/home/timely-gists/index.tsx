@@ -72,7 +72,7 @@ export default function TimelyGistsSection({ gists }: { gists: any }) {
       <div className="flex flex-col gap-2 w-2/5 h-1/6 py-14">
         <div className="flex flex-row justify-between">
           <div className="text-2xl font-bold pl-4">Previous Gists</div>
-          <div className="text-sm text-grey">View All</div>
+          {/* <div className="text-sm text-grey">View All</div> */}
         </div>
         <div className="flex flex-col py-5">
           {gists

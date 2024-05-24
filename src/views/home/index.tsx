@@ -18,8 +18,6 @@ export default function HomeView() {
   const { topics, topicsLoading, topicsError, topicsValidating, topicsEmpty } =
     useGetTopics();
 
-  console.log("topics", topics);
-
   return (
     <div className="">
       {gistsLoading ? (

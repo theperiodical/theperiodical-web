@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate": "prisma generate --no-engine",
+    "generate": "prisma generate",
     "migrate:dev": "prisma migrate dev",
-    "postinstall": "prisma generate --no-engine"
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@iconify/react": "^4.1.1",

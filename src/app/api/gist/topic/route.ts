@@ -1,7 +1,7 @@
 import { prisma } from "@/lib";
 
 export async function GET() {
-  const response = await prisma.topic.findMany({
+  const response = await prisma.topics.findMany({
     orderBy: {
       createdAt: "desc",
     },
@@ -12,11 +12,11 @@ export async function GET() {
       createdAt: true,
       gistId: true,
       updatedAt: true,
-      gist: {
+      gists: {
         select: {
           id: true,
           slug: true,
-          author: {
+          users: {
             select: {
               name: true,
             },
