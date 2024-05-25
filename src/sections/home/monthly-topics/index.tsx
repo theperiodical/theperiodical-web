@@ -39,12 +39,12 @@ export default function MonthlyTopicsSection({ topics }: { topics: any }) {
                   content: string;
                   title: string;
                   createdAt: string;
-                  gist: { author: { name: string }; slug: string };
+                  gists: { users: { name: string }; slug: string };
                   gistId: string;
                 },
                 index: number
               ) => (
-                <Link key={item.id} href={`/gist/${item.gist.slug}`}>
+                <Link key={item.id} href={`/gist/${item.gists.slug}`}>
                   <div className="flex flex-col hover:bg-primary-light p-10 w-[400px] h-[400px]">
                     <img
                       src={items[index]?.image || items[2].image}

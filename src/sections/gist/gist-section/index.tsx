@@ -135,6 +135,7 @@ export default function GistSection({ slug }: { slug: string }) {
       <div className="text-xs text-grey">{gist.author.name}</div>
       <div className="font-bold text-2xl mt-6 mb-6">{gist.title}</div>
       <div className="mx-8 [box-shadow:0_0_20px_0_rgba(0,0,0,.5)]">
+        {/* @ts-ignore */}
         <HTMLFlipBook
           ref={gistRef}
           width={550}
@@ -149,19 +150,6 @@ export default function GistSection({ slug }: { slug: string }) {
           style={{
             backgroundImage: "url('/Images/book-cover.jpg')",
           }}
-          className={""}
-          startPage={0}
-          drawShadow={false}
-          flippingTime={0}
-          usePortrait={false}
-          startZIndex={0}
-          autoSize={false}
-          showCover={false}
-          clickEventForward={false}
-          useMouseEvents={false}
-          swipeDistance={0}
-          showPageCorners={false}
-          disableFlipByClick={false}
         >
           <div className="" />
           <Page type="cover">
