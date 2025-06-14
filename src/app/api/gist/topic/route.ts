@@ -1,32 +1,21 @@
 import { prisma } from "@/lib";
+import { NextResponse } from "next/server";
 
 export async function GET() {
-  const response = await prisma.topics.findMany({
-    orderBy: {
-      createdAt: "desc",
-    },
-    select: {
-      id: true,
-      title: true,
-      content: true,
-      createdAt: true,
-      gistId: true,
-      updatedAt: true,
-      gists: {
-        select: {
-          id: true,
-          slug: true,
-          users: {
-            select: {
-              name: true,
-            },
-          },
+  const response = await prisma.topic.findMany({
+    include: {
+      gist: {
+        include: {
+          author: true,
         },
       },
     },
+    orderBy: {
+      created_at: "desc",
+    },
   });
 
-  return Response.json({
+  return NextResponse.json({
     message: "Topics fetched successfully!",
     topics: response,
   });
