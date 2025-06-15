@@ -36,20 +36,22 @@ export default function HomeView() {
       <AnimatePresence>
         {initialLoading && <Loader />}
       </AnimatePresence>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: initialLoading ? 0 : 1 }}
-        transition={{ duration: 0.5 }}
-        className={initialLoading ? "invisible" : ""}
-      >
-        {gists?.[0] && <HeroSection heroGist={gists?.[0]} />}
-        {gists && <TimelyGistsSection gists={gists || []} />}
-        {topics && <MonthlyTopicsSection topics={topics || []} />}
-        <AboutUsSection />
-        <AuthorsListSection />
-        <JoinTeamSection />
-      </motion.div>
+      {
+        !initialLoading &&
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: initialLoading ? 0 : 1 }}
+          transition={{ duration: 0.5 }}
+          className={initialLoading ? "invisible" : ""}
+        >
+          {gists?.[0] && <HeroSection heroGist={gists?.[0]} />}
+          {gists && <TimelyGistsSection gists={gists || []} />}
+          {topics && <MonthlyTopicsSection topics={topics || []} />}
+          <AboutUsSection />
+          <AuthorsListSection />
+          <JoinTeamSection />
+        </motion.div>
+      }
     </>
   );
 }

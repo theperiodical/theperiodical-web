@@ -35,12 +35,11 @@ export default function TimelyGistsSection({ gists }: { gists: any }) {
         <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 via-background to-muted/5" />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <motion.div 
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">        <motion.div 
           variants={container}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.2 }}
           className="grid lg:grid-cols-5 gap-8"
         >
           {/* Featured Gist */}
@@ -48,12 +47,9 @@ export default function TimelyGistsSection({ gists }: { gists: any }) {
             <motion.div 
               variants={item}
               className="lg:col-span-3 space-y-8"
-            >
-              <div className="space-y-4">
+            >              <div className="space-y-4">
                 <motion.h2 
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5 }}
+                  variants={item}
                   className="text-3xl font-bold inline-flex items-center gap-2"
                 >
                   <span className="bg-primary/10 text-primary px-4 py-1 rounded-full text-sm font-medium">
@@ -105,14 +101,10 @@ export default function TimelyGistsSection({ gists }: { gists: any }) {
                 </div>
               </motion.div>
             </motion.div>
-          )}
-
-          {/* Previous Gists */}
-          <motion.div 
-            variants={item}
+          )}          {/* Previous Gists */}
+          <div 
             className="lg:col-span-2 space-y-6"
-          >
-            <div className="space-y-4">
+          >            <div className="space-y-4">
               <motion.h2 
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -121,13 +113,13 @@ export default function TimelyGistsSection({ gists }: { gists: any }) {
               >
                 Previous Gists
               </motion.h2>
-            </div>
-
-            <div className="flex flex-col space-y-4">
+            </div>            <div className="flex flex-col space-y-4">
               {gists.slice(1, gists.length > 6 ? 6 : gists.length).map((item: any, index: number) => (
                 <Link key={item.id} href={`/gist/${item.slug}`}>
                   <motion.div
-                    variants={item}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
                     className="group relative bg-card p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300
                       border border-border/40 hover:border-primary/20"
                     whileHover={{ x: 8 }}
@@ -150,10 +142,9 @@ export default function TimelyGistsSection({ gists }: { gists: any }) {
                         group-hover:translate-x-2 group-hover:text-primary transition-all" />
                     </div>
                   </motion.div>
-                </Link>
-              ))}
+                </Link>              ))}
             </div>
-          </motion.div>
+          </div>
         </motion.div>
       </div>
     </section>
